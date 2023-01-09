@@ -5,7 +5,10 @@ open Xunit
 open FsUnit.Xunit
 
 let CountElves (calories: string list) : int =
-    0
+    calories.Length
 
 [<Fact>]
-let ``count elves`` () = CountElves [] |> should equal 0 
+let ``count zero elf`` () = CountElves [] |> should equal 0 
+
+[<Fact>]
+let ``count one elf`` () = CountElves ["2000"] |> should equal 1 
