@@ -1,11 +1,9 @@
 module Tests
 
-open System
+open FunctionalDomain
+open DayOne
 open Xunit
 open FsUnit.Xunit
-
-let CountElves (calories: string list) : int =
-    calories.Length
 
 [<Fact>]
 let ``count zero elf`` () = CountElves [] |> should equal 0 
