@@ -35,12 +35,16 @@ let ``split one elf`` () =
 let ``split two Elves`` () =
     SplitElves [ "2000"; ""; "3000" ] |> should equal [["2000"]; ["3000"]]
 
-[<Fact>]
-let ``w`` () =
-    x [ "2"; ""; "3"] |> should equal (["2"]; ["3"]) 
 
-let ``w`` () =
-    x [ "2"; ""; "3"; "4"] |> should equal (["2"]; ["3"; "4"]) 
+
+//
+// [<Fact>]
+// let ``w`` () =
+//     x [ "2"; ""; "3"] |> should equal (["2"]; ["3"]) 
+
+//
+// let ``w`` () =
+//     x [ "2"; ""; "3"; "4"] |> should equal (["2"]; ["3"; "4"]) 
 
 
 //
